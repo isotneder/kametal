@@ -324,6 +324,7 @@ button {
   position: relative;
   display: grid;
   gap: 1.4rem;
+  width: 100%;
   justify-items: end;
   transform-style: preserve-3d;
   transition: transform 260ms ease;
@@ -384,6 +385,13 @@ button {
   --badge-x: 0px;
   --badge-y: 0px;
   position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  text-align: center;
+  line-height: 1.2;
   padding: 0.65rem 0.95rem;
   border-radius: 999px;
   background: rgba(255, 250, 243, 0.14);
@@ -391,6 +399,7 @@ button {
   color: rgba(255, 248, 242, 0.92);
   font-size: 0.86rem;
   backdrop-filter: blur(18px);
+  box-shadow: 0 16px 30px rgba(18, 3, 5, 0.16);
   transform: translate(var(--badge-x), var(--badge-y));
   animation: drift 5.5s ease-in-out infinite;
 }
@@ -403,7 +412,7 @@ button {
 
 .hero-badge-right {
   top: 45%;
-  right: -1%;
+  right: 1%;
   animation-delay: -1.5s;
 }
 
@@ -414,9 +423,21 @@ button {
   animation-delay: -3s;
 }
 
+.hero-badge-top-right {
+  top: 18%;
+  right: 4%;
+  animation-delay: -0.8s;
+}
+
+.hero-badge-bottom-left {
+  bottom: 18%;
+  left: 4%;
+  animation-delay: -2.4s;
+}
+
 .hero-badge-left {
   top: 48%;
-  left: -2%;
+  left: 1%;
   animation-delay: -2.1s;
 }
 
@@ -869,6 +890,24 @@ button {
     margin-inline: auto;
   }
 
+  .hero-orb {
+    width: min(100%, 31rem);
+  }
+
+  .hero-badge {
+    min-width: 7.1rem;
+    padding: 0.55rem 0.78rem;
+    font-size: 0.78rem;
+  }
+
+  .hero-badge-top-right {
+    right: 3%;
+  }
+
+  .hero-badge-bottom-left {
+    left: 3%;
+  }
+
   .legacy-grid {
     grid-template-columns: 1fr;
   }
@@ -939,6 +978,14 @@ button {
     gap: 2rem;
   }
 
+  .hero-visual {
+    gap: 1rem;
+  }
+
+  .hero-orb {
+    width: min(100%, 22rem);
+  }
+
   .hero h1 {
     max-width: none;
     font-size: clamp(2.6rem, 12vw, 4.1rem);
@@ -969,6 +1016,42 @@ button {
     align-items: flex-start;
   }
 
+  .hero-badge {
+    min-width: 5.8rem;
+    max-width: 6.8rem;
+    padding: 0.44rem 0.52rem;
+    font-size: 0.64rem;
+  }
+
+  .hero-badge-top {
+    top: 7%;
+  }
+
+  .hero-badge-top-right {
+    top: 19%;
+    right: 1%;
+  }
+
+  .hero-badge-right {
+    top: 49%;
+    right: 0;
+  }
+
+  .hero-badge-bottom {
+    bottom: 7%;
+    left: 50%;
+  }
+
+  .hero-badge-bottom-left {
+    bottom: 19%;
+    left: 1%;
+  }
+
+  .hero-badge-left {
+    top: 49%;
+    left: 0;
+  }
+
   .hero-school-logo {
     width: 3.8rem;
     height: 3.8rem;
@@ -976,6 +1059,51 @@ button {
 
   .hero-school-copy strong {
     font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav a {
+    flex: 1 1 calc(50% - 0.4rem);
+    text-align: center;
+    padding-inline: 0.7rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-school {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-school-copy strong {
+    max-width: none;
+  }
+
+  .hero-orb {
+    width: min(100%, 19rem);
+  }
+
+  .hero-badge {
+    min-width: 5rem;
+    max-width: 5.6rem;
+    font-size: 0.58rem;
+    padding: 0.4rem 0.42rem;
+  }
+
+  .hero-badge-top-right {
+    top: 21%;
+  }
+
+  .hero-badge-bottom-left {
+    bottom: 21%;
   }
 }
 
