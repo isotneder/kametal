@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">İnkılapçılık</title>
+  <desc id="desc">Kitap, yükselen oklar ve ışık çizgileriyle yenilenmeyi simgeleyen tematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a241b"/>
+      <stop offset="1" stop-color="#2a120f"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="40" fill="url(#bg)"/>
+  <circle cx="124" cy="100" r="90" fill="#f6d182" fill-opacity="0.14"/>
+  <g transform="translate(132 116)">
+    <rect x="0" y="0" width="456" height="228" rx="34" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.1"/>
+    <path d="M136 192c34-16 66-24 96-24s62 8 96 24V84c-34-16-66-24-96-24s-62 8-96 24Z" fill="#fff8ed"/>
+    <path d="M328 192c-34-16-66-24-96-24s-62 8-96 24V84c34-16 66-24 96-24s62 8 96 24Z" fill="#d52e44"/>
+    <path d="M232 84v108" stroke="#6d1420" stroke-width="10" stroke-linecap="round"/>
+    <path d="M98 118l34-34 26 22 54-56" fill="none" stroke="#f6d182" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M300 140l34-44 24 18 50-62" fill="none" stroke="#fff8ed" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="98" cy="118" r="10" fill="#f6d182"/>
+    <circle cx="212" cy="50" r="10" fill="#f6d182"/>
+    <circle cx="408" cy="52" r="10" fill="#fff8ed"/>
+  </g>
+</svg>

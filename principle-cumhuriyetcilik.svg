@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Cumhuriyetçilik</title>
+  <desc id="desc">Meclis, ışınlar ve millet egemenliğini simgeleyen tematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6a1220"/>
+      <stop offset="1" stop-color="#2a0710"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="40" fill="url(#bg)"/>
+  <circle cx="552" cy="92" r="92" fill="#f6d182" fill-opacity="0.14"/>
+  <g opacity="0.22" stroke="#f6d182" stroke-width="10" stroke-linecap="round">
+    <path d="M360 56v62"/>
+    <path d="M296 72l28 52"/>
+    <path d="M424 72l-28 52"/>
+    <path d="M242 108l48 36"/>
+    <path d="M478 108l-48 36"/>
+  </g>
+  <g transform="translate(150 148)">
+    <rect x="0" y="76" width="420" height="112" rx="18" fill="#fff8ed" fill-opacity="0.11"/>
+    <rect x="22" y="52" width="376" height="116" rx="22" fill="#fff8ed" fill-opacity="0.12"/>
+    <path d="M210 0v112" stroke="#f4d59b" stroke-width="10" stroke-linecap="round"/>
+    <path d="M220 12h94v62l-94-16Z" fill="#cf253c"/>
+    <circle cx="266" cy="42" r="18" fill="#fff8ed"/>
+    <circle cx="272" cy="42" r="14" fill="#cf253c"/>
+    <path d="M291 33l4 9 10 1-8 6 3 10-9-5-9 5 2-10-7-6 10-1Z" fill="#f6d182"/>
+    <rect x="56" y="102" width="34" height="58" rx="8" fill="#f4d59b"/>
+    <rect x="116" y="102" width="34" height="58" rx="8" fill="#f4d59b"/>
+    <rect x="176" y="102" width="34" height="58" rx="8" fill="#f4d59b"/>
+    <rect x="236" y="102" width="34" height="58" rx="8" fill="#f4d59b"/>
+    <rect x="296" y="102" width="34" height="58" rx="8" fill="#f4d59b"/>
+  </g>
+</svg>

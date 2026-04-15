@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Halkçılık</title>
+  <desc id="desc">Eşit yurttaşlık ve birlik duygusunu simgeleyen tematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8f3a16"/>
+      <stop offset="1" stop-color="#2f140b"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="40" fill="url(#bg)"/>
+  <g transform="translate(120 110)">
+    <rect x="0" y="0" width="480" height="240" rx="34" fill="#fff8ed" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.1"/>
+    <g fill="#f6d182">
+      <circle cx="98" cy="96" r="28"/>
+      <circle cx="242" cy="70" r="32"/>
+      <circle cx="386" cy="96" r="28"/>
+    </g>
+    <g fill="#fff8ed" fill-opacity="0.85">
+      <rect x="64" y="138" width="68" height="58" rx="24"/>
+      <rect x="198" y="116" width="88" height="80" rx="30"/>
+      <rect x="352" y="138" width="68" height="58" rx="24"/>
+    </g>
+    <path d="M98 214h290" stroke="#f6d182" stroke-width="10" stroke-linecap="round"/>
+    <path d="M98 214c34-24 64-36 92-36s58 12 92 36 64 36 106 36" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

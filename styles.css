@@ -666,6 +666,15 @@ button {
   grid-column: 1 / -1;
 }
 
+.card-visual {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: -1.5rem -1.5rem 1.15rem;
+  border-radius: calc(var(--radius-lg) - 2px) calc(var(--radius-lg) - 2px) 1rem 1rem;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(179, 38, 57, 0.08), rgba(217, 170, 77, 0.12));
+}
+
 .info-card,
 .legacy-card,
 .timeline-card,
@@ -795,6 +804,21 @@ button {
   background:
     radial-gradient(circle at top right, rgba(217, 170, 77, 0.12), transparent 28%),
     rgba(255, 255, 255, 0.82);
+}
+
+.spotlight-visual {
+  margin: 1.5rem 0 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(121, 92, 65, 0.12);
+  background: rgba(255, 248, 240, 0.92);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.spotlight-visual img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .spotlight-label {
@@ -1090,6 +1114,50 @@ button {
 }
 
 @media (max-width: 640px) {
+  .site-header {
+    gap: 0.55rem;
+    width: min(calc(100% - 0.75rem), var(--max-width));
+    padding: 0.4rem 0 0.35rem;
+  }
+
+  .site-header::before {
+    border-radius: 1.35rem;
+  }
+
+  .brand {
+    gap: 0.65rem;
+    padding: 0 0.7rem;
+  }
+
+  .brand-mark {
+    width: 2.5rem;
+    border-width: 1px;
+  }
+
+  .brand-copy strong {
+    font-size: 0.84rem;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .site-nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.35rem;
+    padding: 0 0.45rem 0.4rem;
+  }
+
+  .site-nav a {
+    min-height: 2.2rem;
+    padding: 0.45rem 0.35rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   body {
     background:
       radial-gradient(circle at top left, rgba(240, 199, 107, 0.12), transparent 28%),
@@ -1135,6 +1203,11 @@ button {
     padding-right: 1.15rem;
   }
 
+  .card-visual {
+    margin-left: -1.15rem;
+    margin-right: -1.15rem;
+  }
+
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
@@ -1162,10 +1235,33 @@ button {
 }
 
 @media (max-width: 480px) {
+  .site-header {
+    width: min(calc(100% - 0.55rem), var(--max-width));
+    padding-top: 0.32rem;
+  }
+
+  .brand {
+    gap: 0.52rem;
+    padding-inline: 0.55rem;
+  }
+
+  .brand-mark {
+    width: 2.1rem;
+  }
+
+  .brand-copy strong {
+    font-size: 0.76rem;
+  }
+
+  .site-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-inline: 0.35rem;
+  }
+
   .site-nav a {
-    flex: 1 1 calc(50% - 0.4rem);
     text-align: center;
-    padding-inline: 0.7rem;
+    padding-inline: 0.48rem;
+    font-size: 0.68rem;
   }
 
   .hero-actions {

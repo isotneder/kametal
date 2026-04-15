@@ -6,7 +6,9 @@ const principleContent = {
       "Cumhuriyetçilik, yönetim gücünün bir hanedana değil millete ait olduğunu savunur. Bu anlayış, meclisi ve yurttaşın siyasal iradesini devletin temel zemini haline getirir.",
     focus: "TBMM'nin açılması, Cumhuriyet'in ilanı",
     impact: "Meşruiyetin kaynağı millet iradesi oldu.",
-    note: "Bu ilke, diğer tüm ilkelerin uygulanacağı siyasal zemini kurduğu için kurucu bir rol üstlenir."
+    note: "Bu ilke, diğer tüm ilkelerin uygulanacağı siyasal zemini kurduğu için kurucu bir rol üstlenir.",
+    image: "principle-cumhuriyetcilik.svg",
+    imageAlt: "Cumhuriyetçilik ilkesini anlatan tematik illüstrasyon"
   },
   milliyetcilik: {
     label: "02 • Milliyetçilik",
@@ -15,7 +17,9 @@ const principleContent = {
       "Atatürk'ün milliyetçilik anlayışı, ortak tarih ve kader etrafında birleşen yurttaşlık bilincini güçlendirir. Irk üstünlüğünden değil, bağımsız ve birlikte yaşayan bir millet fikrinden beslenir.",
     focus: "Milli Mücadele ruhu, Misak-ı Milli anlayışı",
     impact: "Ulusal dayanışma, dış baskılara karşı ortak direnç yarattı.",
-    note: "Bu ilke, yeni devletin varlığını ortak kimlik ve bağımsızlık duygusuyla sağlamlaştırdı."
+    note: "Bu ilke, yeni devletin varlığını ortak kimlik ve bağımsızlık duygusuyla sağlamlaştırdı.",
+    image: "principle-milliyetcilik.svg",
+    imageAlt: "Milliyetçilik ilkesini anlatan tematik illüstrasyon"
   },
   halkcilik: {
     label: "03 • Halkçılık",
@@ -24,7 +28,9 @@ const principleContent = {
       "Halkçılık, toplum içindeki sınıf ayrıcalıklarını reddeder ve devletin tüm yurttaşlara eşit mesafede durmasını hedefler. Yönetimde ve kamusal yaşamda katılım duygusunu güçlendirir.",
     focus: "Sosyal reformlar, eşit yurttaşlık anlayışı",
     impact: "Tebaa anlayışından yurttaşlık kültürüne geçiş hızlandı.",
-    note: "Cumhuriyet'in toplumsal tabanını genişleten bu ilke, dayanışma ve eşitlik fikrini öne çıkardı."
+    note: "Cumhuriyet'in toplumsal tabanını genişleten bu ilke, dayanışma ve eşitlik fikrini öne çıkardı.",
+    image: "principle-halkcilik.svg",
+    imageAlt: "Halkçılık ilkesini anlatan tematik illüstrasyon"
   },
   laiklik: {
     label: "04 • Laiklik",
@@ -33,7 +39,9 @@ const principleContent = {
       "Laiklik, devlet yönetimi ile dini kurumların alanlarını ayırarak hukuk, eğitim ve kamu düzeninin rasyonel temelde örgütlenmesini sağlar. Bu yaklaşım, farklı inançların bir arada yaşamasını da güvence altına alır.",
     focus: "Halifeliğin kaldırılması, hukuk ve eğitim reformları",
     impact: "Devlet kurumları daha tutarlı ve merkezi bir yapıya kavuştu.",
-    note: "Laiklik, yalnızca din-devlet ayrımı değil; aynı zamanda kamusal kararların akılcı esaslara dayanmasıdır."
+    note: "Laiklik, yalnızca din-devlet ayrımı değil; aynı zamanda kamusal kararların akılcı esaslara dayanmasıdır.",
+    image: "principle-laiklik.svg",
+    imageAlt: "Laiklik ilkesini anlatan tematik illüstrasyon"
   },
   devletcilik: {
     label: "05 • Devletçilik",
@@ -42,7 +50,9 @@ const principleContent = {
       "Devletçilik, ekonominin tamamen devlet kontrolüne alınması değil; ihtiyaç duyulan alanlarda devletin yönlendirici ve yatırımcı rol üstlenmesidir. Özellikle sanayileşme ve altyapı hamlelerinde belirleyici olmuştur.",
     focus: "Sanayi planları, demiryolları, kamu yatırımları",
     impact: "Genç Cumhuriyet, üretim ve ulaşım kapasitesini daha hızlı büyüttü.",
-    note: "Ekonomik bağımsızlık olmadan siyasal bağımsızlığın eksik kalacağı düşüncesi bu ilkenin merkezindedir."
+    note: "Ekonomik bağımsızlık olmadan siyasal bağımsızlığın eksik kalacağı düşüncesi bu ilkenin merkezindedir.",
+    image: "principle-devletcilik.svg",
+    imageAlt: "Devletçilik ilkesini anlatan tematik illüstrasyon"
   },
   inkilapcilik: {
     label: "06 • İnkılapçılık",
@@ -51,7 +61,9 @@ const principleContent = {
       "İnkılapçılık, yapılan reformları korumakla yetinmez; değişen koşullara göre kendini yenileyebilen bir toplum düzenini savunur. Durağanlığı değil ilerlemeyi esas alır.",
     focus: "Harf Devrimi, kıyafet ve kültür reformları",
     impact: "Yenilikler günlük yaşama yayılarak kurumsallaştı.",
-    note: "Bu ilke, Cumhuriyet'in sadece kurulmuş değil, sürekli gelişen bir proje olduğunu vurgular."
+    note: "Bu ilke, Cumhuriyet'in sadece kurulmuş değil, sürekli gelişen bir proje olduğunu vurgular.",
+    image: "principle-inkilapcilik.svg",
+    imageAlt: "İnkılapçılık ilkesini anlatan tematik illüstrasyon"
   }
 };
 
@@ -66,6 +78,7 @@ const spotlightSummary = document.getElementById("spotlight-summary");
 const spotlightFocus = document.getElementById("spotlight-focus");
 const spotlightImpact = document.getElementById("spotlight-impact");
 const spotlightNote = document.getElementById("spotlight-note");
+const spotlightImage = document.getElementById("spotlight-image");
 
 function updateSpotlight(key) {
   const content = principleContent[key];
@@ -81,6 +94,11 @@ function updateSpotlight(key) {
   spotlightFocus.textContent = content.focus;
   spotlightImpact.textContent = content.impact;
   spotlightNote.textContent = content.note;
+
+  if (spotlightImage && content.image) {
+    spotlightImage.src = content.image;
+    spotlightImage.alt = content.imageAlt || "";
+  }
 
   principleButtons.forEach((button) => {
     const isActive = button.dataset.principle === key;

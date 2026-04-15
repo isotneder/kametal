@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Devletçilik</title>
+  <desc id="desc">Fabrika, grafik ve demiryolu çizgileriyle kalkınmayı simgeleyen tematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#174562"/>
+      <stop offset="1" stop-color="#0b1822"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="40" fill="url(#bg)"/>
+  <path d="M98 392h524" stroke="#ffffff" stroke-opacity="0.1" stroke-width="12" stroke-linecap="round"/>
+  <g transform="translate(124 154)">
+    <path d="M0 180h472v42H0Z" fill="#ffffff" fill-opacity="0.08"/>
+    <path d="M0 180V92l86 36V86l98 42V72l82 34V64l110 48v68Z" fill="#ffffff" fill-opacity="0.14"/>
+    <rect x="54" y="50" width="38" height="130" rx="8" fill="#74d2e0"/>
+    <rect x="112" y="76" width="28" height="104" rx="8" fill="#74d2e0" fill-opacity="0.78"/>
+    <rect x="158" y="100" width="28" height="80" rx="8" fill="#74d2e0" fill-opacity="0.66"/>
+    <path d="M236 136l58-46 36 24 74-80 40 28" fill="none" stroke="#f6d182" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="236" cy="136" r="10" fill="#f6d182"/>
+    <circle cx="294" cy="90" r="10" fill="#f6d182"/>
+    <circle cx="330" cy="114" r="10" fill="#f6d182"/>
+    <circle cx="404" cy="34" r="10" fill="#f6d182"/>
+    <circle cx="444" cy="62" r="10" fill="#f6d182"/>
+  </g>
+</svg>
