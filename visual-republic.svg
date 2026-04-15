@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">Cumhuriyet Vizyonu</title>
+  <desc id="desc">Bayrak, kitap, güneş halkaları ve meclis benzeri formlarla hazırlanmış tematik bir illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a101b"/>
+      <stop offset="1" stop-color="#22060b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6d182"/>
+      <stop offset="1" stop-color="#c68129"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="620" rx="54" fill="url(#bg)"/>
+  <circle cx="640" cy="126" r="124" fill="#f1be68" fill-opacity="0.12"/>
+  <circle cx="640" cy="126" r="82" fill="#f1be68" fill-opacity="0.14"/>
+  <path d="M120 480C220 428 314 392 400 392c111 0 201 39 281 88H120Z" fill="#120306" fill-opacity="0.32"/>
+  <path d="M164 444c58-85 139-128 236-128 113 0 204 43 272 128" fill="none" stroke="#f2cb7a" stroke-opacity="0.22" stroke-width="14" stroke-linecap="round"/>
+  <g opacity="0.88">
+    <path d="M234 432h332v72H234z" fill="#fff7ea" fill-opacity="0.1"/>
+    <path d="M256 432c0-46 30-74 75-74h138c45 0 75 28 75 74H256Z" fill="#fff7ea" fill-opacity="0.1"/>
+    <path d="M308 392h16v40h-16zm52-32h16v72h-16zm52-20h16v92h-16zm52 20h16v72h-16z" fill="#f7dfaf" fill-opacity="0.72"/>
+  </g>
+  <g transform="translate(182 178)">
+    <rect x="0" y="0" width="436" height="284" rx="34" fill="url(#glass)" stroke="#ffffff" stroke-opacity="0.1"/>
+    <circle cx="68" cy="70" r="36" fill="#f2c164" fill-opacity="0.18"/>
+    <path d="M118 186c36-66 88-99 156-99s120 33 156 99" fill="none" stroke="#f1c46d" stroke-opacity="0.26" stroke-width="10" stroke-linecap="round"/>
+    <path d="M128 194l91-28c18-6 37-5 55 1l60 21c16 6 34 7 51 3l55-13v88c-18 7-38 8-57 3l-60-18c-20-6-41-6-61 1l-91 31Z" fill="#fff8ed"/>
+    <path d="M128 194v88l91-31c20-7 41-7 61-1l60 18c19 5 39 4 57-3v-87l-55 13c-17 4-35 3-51-3l-60-21c-18-6-37-7-55-1Z" fill="#c52a3f"/>
+    <path d="M219 166v102" stroke="#6d1420" stroke-width="9" stroke-linecap="round"/>
+    <path d="M305 168v99" stroke="#6d1420" stroke-width="9" stroke-linecap="round"/>
+    <path d="M175 199c13-18 31-28 55-30" fill="none" stroke="#fff8ed" stroke-width="9" stroke-linecap="round"/>
+    <path d="M313 249l27-39 22 18 28-49" fill="none" stroke="#fff8ed" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="170" cy="213" r="9" fill="#f6d182"/>
+    <circle cx="390" cy="196" r="8" fill="#f6d182"/>
+    <path d="M87 88h106a46 46 0 0 1-46 46H87Z" fill="#d62d42"/>
+    <circle cx="120" cy="120" r="22" fill="#fff8ed"/>
+    <circle cx="128" cy="120" r="17" fill="#d62d42"/>
+    <path d="M151 109l5 11 12 1-9 8 3 12-11-6-10 6 2-12-8-8 12-1Z" fill="#f6d182"/>
+  </g>
+</svg>

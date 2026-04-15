@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Eğitim ve Yenilik</title>
+  <desc id="desc">Açık kitap, harf blokları ve ışık çizgileriyle hazırlanmış tematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a1c2b"/>
+      <stop offset="1" stop-color="#2d0e14"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff9ef"/>
+      <stop offset="1" stop-color="#f0debf"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="42" fill="url(#bg)"/>
+  <circle cx="126" cy="106" r="88" fill="#f6d182" fill-opacity="0.14"/>
+  <g transform="translate(146 114)">
+    <rect x="0" y="0" width="428" height="252" rx="34" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+    <path d="M108 216c36-16 70-24 102-24s66 8 102 24V92c-36-16-70-24-102-24s-66 8-102 24Z" fill="url(#paper)"/>
+    <path d="M312 216c-36-16-70-24-102-24s-66 8-102 24V92c36-16 70-24 102-24s66 8 102 24Z" fill="#d82e45" fill-opacity="0.92"/>
+    <path d="M210 92v124" stroke="#6d1420" stroke-width="10" stroke-linecap="round"/>
+    <path d="M146 116h40m-40 30h60m-60 30h46" stroke="#a94a1a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M236 120h44m-44 30h58m-58 30h34" stroke="#fff7ee" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(54 42)">
+      <rect x="0" y="0" width="64" height="64" rx="18" fill="#f6d182"/>
+      <path d="M19 44l14-27 14 27m-22-8h16" fill="none" stroke="#6d1420" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(312 36)">
+      <rect x="0" y="0" width="74" height="74" rx="20" fill="#fff8ed" fill-opacity="0.18"/>
+      <path d="M24 48h30M24 28h20m18 0h8" stroke="#f6d182" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path d="M116 394c86-26 168-39 244-39 82 0 164 14 244 39" fill="none" stroke="#f6d182" stroke-opacity="0.18" stroke-width="14" stroke-linecap="round"/>
+</svg>

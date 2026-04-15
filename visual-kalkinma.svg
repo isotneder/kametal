@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Kalkınma ve Üretim</title>
+  <desc id="desc">Fabrika, yükselen grafik ve demiryolu çizgileriyle hazırlanmış tematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12354a"/>
+      <stop offset="1" stop-color="#08131d"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6fd0e1"/>
+      <stop offset="1" stop-color="#2e8ca8"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="42" fill="url(#bg)"/>
+  <circle cx="582" cy="102" r="96" fill="#6fd0e1" fill-opacity="0.12"/>
+  <path d="M98 392h524" stroke="#ffffff" stroke-opacity="0.1" stroke-width="12" stroke-linecap="round"/>
+  <g transform="translate(118 158)">
+    <path d="M0 184h484v42H0Z" fill="#ffffff" fill-opacity="0.08"/>
+    <path d="M0 184V92l98 42V88l110 44V72l88 38V60l102 52v72Z" fill="#ffffff" fill-opacity="0.14"/>
+    <rect x="66" y="54" width="42" height="130" rx="8" fill="#6fd0e1"/>
+    <rect x="130" y="74" width="30" height="110" rx="8" fill="#6fd0e1" fill-opacity="0.82"/>
+    <rect x="182" y="96" width="30" height="88" rx="8" fill="#6fd0e1" fill-opacity="0.72"/>
+    <path d="M236 136l54-52 42 32 72-86 42 34" fill="none" stroke="#f6d182" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="236" cy="136" r="10" fill="#f6d182"/>
+    <circle cx="290" cy="84" r="10" fill="#f6d182"/>
+    <circle cx="332" cy="116" r="10" fill="#f6d182"/>
+    <circle cx="404" cy="30" r="10" fill="#f6d182"/>
+    <circle cx="446" cy="64" r="10" fill="#f6d182"/>
+  </g>
+  <path d="M122 428c82-22 160-34 238-34 81 0 160 12 238 34" fill="none" stroke="#6fd0e1" stroke-opacity="0.26" stroke-width="14" stroke-linecap="round"/>
+</svg>
