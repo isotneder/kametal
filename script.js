@@ -81,53 +81,67 @@ const principleContent = {
 
 const revealElements = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll(".counter");
-const principleButtons = document.querySelectorAll(".principle-card");
-const spotlight = document.getElementById("spotlight");
+const principleItems = document.querySelectorAll(".principle-item");
+const principleTriggers = document.querySelectorAll(".principle-trigger");
 
-const spotlightLabel = document.getElementById("spotlight-label");
-const spotlightTitle = document.getElementById("spotlight-title");
-const spotlightSummary = document.getElementById("spotlight-summary");
-const spotlightDetails = document.getElementById("spotlight-details");
-const spotlightFocus = document.getElementById("spotlight-focus");
-const spotlightImpact = document.getElementById("spotlight-impact");
-const spotlightHistory = document.getElementById("spotlight-history");
-const spotlightNote = document.getElementById("spotlight-note");
-const spotlightImage = document.getElementById("spotlight-image");
-
-function updateSpotlight(key) {
-  const content = principleContent[key];
-
-  if (!content || !spotlight) {
-    return;
-  }
-
-  spotlight.dataset.theme = key;
-  spotlightLabel.textContent = content.label;
-  spotlightTitle.textContent = content.title;
-  spotlightSummary.textContent = content.summary;
-  spotlightDetails.textContent = content.details;
-  spotlightFocus.textContent = content.focus;
-  spotlightImpact.textContent = content.impact;
-  spotlightHistory.textContent = content.history;
-  spotlightNote.textContent = content.note;
-
-  if (spotlightImage && content.image) {
-    spotlightImage.src = content.image;
-    spotlightImage.alt = content.imageAlt || "";
-  }
-
-  principleButtons.forEach((button) => {
-    const isActive = button.dataset.principle === key;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
+function collapseAllPrinciples() {
+  principleItems.forEach((item) => {
+    item.classList.remove("is-expanded");
+    const trigger = item.querySelector(".principle-trigger");
+    const content = item.querySelector(".principle-content");
+    if (trigger) trigger.setAttribute("aria-expanded", "false");
+    if (content) content.hidden = true;
   });
 }
 
-principleButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    updateSpotlight(button.dataset.principle);
+function expandPrinciple(item) {
+  const key = item.dataset.principle;
+  const content = principleContent[key];
+
+  if (!content) return;
+
+  collapseAllPrinciples();
+
+  item.classList.add("is-expanded");
+  const trigger = item.querySelector(".principle-trigger");
+  const contentDiv = item.querySelector(".principle-content");
+  const detailsText = item.querySelector(".principle-details-text");
+  const focusEl = item.querySelector(".principle-focus");
+  const impactEl = item.querySelector(".principle-impact");
+  const historyEl = item.querySelector(".principle-history");
+  const noteEl = item.querySelector(".principle-note");
+  const imageEl = item.querySelector(".principle-visual img");
+
+  if (trigger) trigger.setAttribute("aria-expanded", "true");
+  if (contentDiv) contentDiv.hidden = false;
+  if (detailsText) detailsText.textContent = content.details;
+  if (focusEl) focusEl.textContent = content.focus;
+  if (impactEl) impactEl.textContent = content.impact;
+  if (historyEl) historyEl.textContent = content.history;
+  if (noteEl) noteEl.textContent = content.note;
+  if (imageEl) imageEl.src = content.image;
+
+  // Scroll into view smoothly
+  item.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+principleTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const item = trigger.closest(".principle-item");
+    if (item) {
+      if (item.classList.contains("is-expanded")) {
+        collapseAllPrinciples();
+      } else {
+        expandPrinciple(item);
+      }
+    }
   });
 });
+
+// Expand first item on load
+if (principleItems.length > 0) {
+  expandPrinciple(principleItems[0]);
+}
 
 const revealObserver = new IntersectionObserver(
   (entries, observer) => {

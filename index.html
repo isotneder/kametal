@@ -20,24 +20,6 @@
 </head>
 <body>
   <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Ana sayfa">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="school-logo.png" alt="" loading="eager">
-        </span>
-        <span class="brand-copy">
-          <strong>Atatürk İlkeleri</strong>
-          <small>Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi</small>
-        </span>
-      </a>
-      <nav class="site-nav" aria-label="Bölümler">
-        <a href="#hikaye">Hikaye</a>
-        <a href="#ilkeler">İlkeler</a>
-        <a href="#zaman-cizelgesi">Tarih</a>
-        <a href="#miras">Miras</a>
-      </nav>
-    </header>
-
     <main id="top">
       <section class="hero section">
         <div class="hero-copy reveal">
@@ -217,78 +199,209 @@
             </p>
           </div>
 
-          <div class="principles-layout">
-            <div class="principle-grid" role="tablist" aria-label="Atatürk ilkeleri">
-              <button class="principle-card reveal is-active" type="button" data-principle="cumhuriyetcilik" aria-pressed="true">
+          <div class="principles-accordion" role="tablist" aria-label="Atatürk ilkeleri">
+            <article class="principle-item reveal is-expanded" data-principle="cumhuriyetcilik">
+              <button class="principle-trigger" type="button" aria-expanded="true">
                 <span class="principle-number">01</span>
-                <h3>Cumhuriyetçilik</h3>
-                <p>Yönetimde millet iradesini esas alır; egemenliği kişiden alıp millete verir.</p>
+                <div class="principle-header">
+                  <h3>Cumhuriyetçilik</h3>
+                  <p>Yönetimde millet iradesini esas alır; egemenliği kişiden alıp millete verir.</p>
+                </div>
+                <span class="expand-icon" aria-hidden="true">+</span>
               </button>
-              <button class="principle-card reveal" type="button" data-principle="milliyetcilik" aria-pressed="false">
+              <div class="principle-content" hidden>
+                <div class="principle-body">
+                  <p class="principle-details-text"></p>
+                  <figure class="principle-visual">
+                    <img src="principle-cumhuriyetcilik.svg" alt="Cumhuriyetçilik ilkesini anlatan tematik illüstrasyon" loading="lazy">
+                  </figure>
+                  <div class="principle-details">
+                    <div class="detail-chip">
+                      <span>Tarihsel odak</span>
+                      <strong class="principle-focus">TBMM'nin açılması, Cumhuriyet'in ilanı</strong>
+                    </div>
+                    <div class="detail-chip">
+                      <span>Öne çıkan sonuç</span>
+                      <strong class="principle-impact">Meşruiyetin kaynağı millet iradesi oldu.</strong>
+                    </div>
+                  </div>
+                  <div class="principle-timeline">
+                    <span class="timeline-label">Tarih akışı</span>
+                    <p class="principle-history"></p>
+                  </div>
+                  <p class="principle-note"></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="principle-item reveal" data-principle="milliyetcilik">
+              <button class="principle-trigger" type="button" aria-expanded="false">
                 <span class="principle-number">02</span>
-                <h3>Milliyetçilik</h3>
-                <p>Ulusal birliği, bağımsızlığı ve ortak aidiyet duygusunu güçlendirir.</p>
+                <div class="principle-header">
+                  <h3>Milliyetçilik</h3>
+                  <p>Ulusal birliği, bağımsızlığı ve ortak aidiyet duygusunu güçlendirir.</p>
+                </div>
+                <span class="expand-icon" aria-hidden="true">+</span>
               </button>
-              <button class="principle-card reveal" type="button" data-principle="halkcilik" aria-pressed="false">
+              <div class="principle-content" hidden>
+                <div class="principle-body">
+                  <p class="principle-details-text"></p>
+                  <figure class="principle-visual">
+                    <img src="principle-milliyetcilik.svg" alt="Milliyetçilik ilkesini anlatan tematik illüstrasyon" loading="lazy">
+                  </figure>
+                  <div class="principle-details">
+                    <div class="detail-chip">
+                      <span>Tarihsel odak</span>
+                      <strong class="principle-focus"></strong>
+                    </div>
+                    <div class="detail-chip">
+                      <span>Öne çıkan sonuç</span>
+                      <strong class="principle-impact"></strong>
+                    </div>
+                  </div>
+                  <div class="principle-timeline">
+                    <span class="timeline-label">Tarih akışı</span>
+                    <p class="principle-history"></p>
+                  </div>
+                  <p class="principle-note"></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="principle-item reveal" data-principle="halkcilik">
+              <button class="principle-trigger" type="button" aria-expanded="false">
                 <span class="principle-number">03</span>
-                <h3>Halkçılık</h3>
-                <p>Toplumda sınıf ayrıcalığını reddeder; eşit yurttaşlık fikrini öne çıkarır.</p>
+                <div class="principle-header">
+                  <h3>Halkçılık</h3>
+                  <p>Toplumda sınıf ayrıcalığını reddeder; eşit yurttaşlık fikrini öne çıkarır.</p>
+                </div>
+                <span class="expand-icon" aria-hidden="true">+</span>
               </button>
-              <button class="principle-card reveal" type="button" data-principle="laiklik" aria-pressed="false">
+              <div class="principle-content" hidden>
+                <div class="principle-body">
+                  <p class="principle-details-text"></p>
+                  <figure class="principle-visual">
+                    <img src="principle-halkcilik.svg" alt="Halkçılık ilkesini anlatan tematik illüstrasyon" loading="lazy">
+                  </figure>
+                  <div class="principle-details">
+                    <div class="detail-chip">
+                      <span>Tarihsel odak</span>
+                      <strong class="principle-focus"></strong>
+                    </div>
+                    <div class="detail-chip">
+                      <span>Öne çıkan sonuç</span>
+                      <strong class="principle-impact"></strong>
+                    </div>
+                  </div>
+                  <div class="principle-timeline">
+                    <span class="timeline-label">Tarih akışı</span>
+                    <p class="principle-history"></p>
+                  </div>
+                  <p class="principle-note"></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="principle-item reveal" data-principle="laiklik">
+              <button class="principle-trigger" type="button" aria-expanded="false">
                 <span class="principle-number">04</span>
-                <h3>Laiklik</h3>
-                <p>Devlet işlerini din kurallarından ayırarak hukuku ve kamusal düzeni akla dayandırır.</p>
+                <div class="principle-header">
+                  <h3>Laiklik</h3>
+                  <p>Devlet işlerini din kurallarından ayırarak hukuku ve kamusal düzeni akla dayandırır.</p>
+                </div>
+                <span class="expand-icon" aria-hidden="true">+</span>
               </button>
-              <button class="principle-card reveal" type="button" data-principle="devletcilik" aria-pressed="false">
+              <div class="principle-content" hidden>
+                <div class="principle-body">
+                  <p class="principle-details-text"></p>
+                  <figure class="principle-visual">
+                    <img src="principle-laiklik.svg" alt="Laiklik ilkesini anlatan tematik illüstrasyon" loading="lazy">
+                  </figure>
+                  <div class="principle-details">
+                    <div class="detail-chip">
+                      <span>Tarihsel odak</span>
+                      <strong class="principle-focus"></strong>
+                    </div>
+                    <div class="detail-chip">
+                      <span>Öne çıkan sonuç</span>
+                      <strong class="principle-impact"></strong>
+                    </div>
+                  </div>
+                  <div class="principle-timeline">
+                    <span class="timeline-label">Tarih akışı</span>
+                    <p class="principle-history"></p>
+                  </div>
+                  <p class="principle-note"></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="principle-item reveal" data-principle="devletcilik">
+              <button class="principle-trigger" type="button" aria-expanded="false">
                 <span class="principle-number">05</span>
-                <h3>Devletçilik</h3>
-                <p>Ekonomik kalkınmada kamu öncülüğünü devreye alarak üretim gücünü artırmayı hedefler.</p>
+                <div class="principle-header">
+                  <h3>Devletçilik</h3>
+                  <p>Ekonomik kalkınmada kamu öncülüğünü devreye alarak üretim gücünü artırmayı hedefler.</p>
+                </div>
+                <span class="expand-icon" aria-hidden="true">+</span>
               </button>
-              <button class="principle-card reveal" type="button" data-principle="inkilapcilik" aria-pressed="false">
+              <div class="principle-content" hidden>
+                <div class="principle-body">
+                  <p class="principle-details-text"></p>
+                  <figure class="principle-visual">
+                    <img src="principle-devletcilik.svg" alt="Devletçilik ilkesini anlatan tematik illüstrasyon" loading="lazy">
+                  </figure>
+                  <div class="principle-details">
+                    <div class="detail-chip">
+                      <span>Tarihsel odak</span>
+                      <strong class="principle-focus"></strong>
+                    </div>
+                    <div class="detail-chip">
+                      <span>Öne çıkan sonuç</span>
+                      <strong class="principle-impact"></strong>
+                    </div>
+                  </div>
+                  <div class="principle-timeline">
+                    <span class="timeline-label">Tarih akışı</span>
+                    <p class="principle-history"></p>
+                  </div>
+                  <p class="principle-note"></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="principle-item reveal" data-principle="inkilapcilik">
+              <button class="principle-trigger" type="button" aria-expanded="false">
                 <span class="principle-number">06</span>
-                <h3>İnkılapçılık</h3>
-                <p>Yapılan yenilikleri korur, toplumu çağın gerisinde bırakmayan bir dönüşüm anlayışını savunur.</p>
+                <div class="principle-header">
+                  <h3>İnkılapçılık</h3>
+                  <p>Yapılan yenilikleri korur, toplumu çağın gerisinde bırakmayan bir dönüşüm anlayışını savunur.</p>
+                </div>
+                <span class="expand-icon" aria-hidden="true">+</span>
               </button>
-            </div>
-
-            <article class="principle-spotlight reveal" id="spotlight" data-theme="cumhuriyetcilik">
-              <span class="spotlight-label" id="spotlight-label">01 • Cumhuriyetçilik</span>
-              <h3 id="spotlight-title">Millet egemenliği, modern yönetimin merkezine yerleşir.</h3>
-              <p id="spotlight-summary">
-                Cumhuriyetçilik, yönetim gücünün bir hanedana değil millete ait olduğunu savunur.
-                Bu anlayış, meclisi ve yurttaşın siyasal iradesini devletin temel zemini haline getirir.
-              </p>
-
-              <p id="spotlight-details" class="spotlight-details-text"></p>
-
-              <figure class="spotlight-visual">
-                <img
-                  id="spotlight-image"
-                  src="principle-cumhuriyetcilik.svg"
-                  alt="Cumhuriyetçilik ilkesini anlatan tematik illüstrasyon"
-                  loading="lazy"
-                >
-              </figure>
-
-              <div class="spotlight-details">
-                <div class="detail-chip">
-                  <span>Tarihsel odak</span>
-                  <strong id="spotlight-focus">TBMM'nin açılması, Cumhuriyet'in ilanı</strong>
-                </div>
-                <div class="detail-chip">
-                  <span>Öne çıkan sonuç</span>
-                  <strong id="spotlight-impact">Meşruiyetin kaynağı millet iradesi oldu.</strong>
+              <div class="principle-content" hidden>
+                <div class="principle-body">
+                  <p class="principle-details-text"></p>
+                  <figure class="principle-visual">
+                    <img src="principle-inkilapcilik.svg" alt="İnkılapçılık ilkesini anlatan tematik illüstrasyon" loading="lazy">
+                  </figure>
+                  <div class="principle-details">
+                    <div class="detail-chip">
+                      <span>Tarihsel odak</span>
+                      <strong class="principle-focus"></strong>
+                    </div>
+                    <div class="detail-chip">
+                      <span>Öne çıkan sonuç</span>
+                      <strong class="principle-impact"></strong>
+                    </div>
+                  </div>
+                  <div class="principle-timeline">
+                    <span class="timeline-label">Tarih akışı</span>
+                    <p class="principle-history"></p>
+                  </div>
+                  <p class="principle-note"></p>
                 </div>
               </div>
-
-              <div class="spotlight-timeline">
-                <span class="timeline-label">Tarih akışı</span>
-                <p id="spotlight-history"></p>
-              </div>
-
-              <p class="spotlight-note" id="spotlight-note">
-                Bu ilke, diğer tüm ilkelerin uygulanacağı siyasal zemini kurduğu için kurucu bir rol üstlenir.
-              </p>
             </article>
           </div>
         </section>
