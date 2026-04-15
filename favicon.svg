@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Atatürk İlkeleri</title>
+  <rect width="64" height="64" rx="16" fill="#8f1f2d" />
+  <circle cx="29" cy="32" r="15" fill="#fff4e8" />
+  <circle cx="34" cy="32" r="12" fill="#8f1f2d" />
+  <polygon
+    points="42,20 44.9,27.5 53,27.8 46.6,32.7 48.8,40.6 42,36 35.2,40.6 37.4,32.7 31,27.8 39.1,27.5"
+    fill="#eab55f"
+  />
+</svg>
