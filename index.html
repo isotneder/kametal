@@ -3,604 +3,528 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atatürk İlkeleri | Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi</title>
+  <title>Atatürk İlkeleri | Dijital Sergi</title>
   <meta
     name="description"
-    content="Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi için hazırlanan, Atatürk ilkelerini Türk tarihinin dönüm noktalarıyla birlikte anlatan animasyonlu okul projesi."
+    content="Atatürk ilkelerini tarihsel bağlamı, dönüşüm etkisi ve bugüne yansımasıyla anlatan editoryal tasarımlı dijital sergi deneyimi."
   >
-  <meta name="theme-color" content="#8f1f2d">
+  <meta name="theme-color" content="#b43a2f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="icon" href="school-logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <main id="top">
-      <section class="hero section">
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-frame">
         <div class="hero-copy reveal">
-          <span class="eyebrow">Türk tarihi • Milli Mücadele • çağdaşlaşma</span>
-          <h1>Cumhuriyeti kuran düşünceyi, etkileyici bir dijital anlatımla keşfet.</h1>
-          <p class="hero-text">
-            Atatürk ilkeleri yalnızca birer kavram değil; savaşın içinden çıkan bir toplumun
-            bağımsızlık, yurttaşlık, hukuk ve yenilenme arayışına verdiği cevaptır. Bu sayfa,
-            o fikri omurgayı güçlü görseller ve akıcı animasyonlarla anlatır.
+          <p class="hero-kicker">Dijital Sergi • Atatürk İlkeleri • Okul Projesi</p>
+          <h1>Cumhuriyetin fikir mimarisini, yeni bir tasarım diliyle keşfet.</h1>
+          <p class="hero-lead">
+            Bu sayfa yalnızca bilgi vermek için değil; bir dönemin ruhunu, dönüşüm isteğini ve
+            kurucu düşünceyi hissettirmek için tasarlandı. Altı ilke burada bir ders notu gibi
+            değil, yaşayan bir sergi akışı gibi anlatılıyor.
           </p>
-          <div class="hero-school">
-            <img
-              class="hero-school-logo"
-              src="school-logo.png"
-              alt="Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi logosu"
-            >
-            <div class="hero-school-copy">
-              <span>Okul Projesi</span>
-              <strong>Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi</strong>
-            </div>
-          </div>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#ilkeler">İlkeleri İncele</a>
-            <a class="button button-secondary" href="#zaman-cizelgesi">Tarih Akışını Gör</a>
+            <a class="button button-primary" href="#ilkeler">Sergiyi Başlat</a>
+            <a class="button button-secondary" href="#zaman-cizelgesi">Zaman Çizgisini Gör</a>
           </div>
 
-          <div class="hero-stats">
-            <article class="stat-card">
-              <strong class="counter" data-target="6">0</strong>
-              <span>temel ilke</span>
-            </article>
-            <article class="stat-card">
-              <strong class="counter" data-target="7">0</strong>
-              <span>dönüm noktası</span>
-            </article>
-            <article class="stat-card">
-              <strong class="counter" data-target="1">0</strong>
-              <span>çağdaşlaşma vizyonu</span>
-            </article>
+          <div class="hero-meta">
+            <div class="meta-block meta-block-author">
+              <span>Hazırlayan</span>
+              <div class="meta-author">
+                <strong>Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi</strong>
+                <img class="school-logo" src="school-logo.png" alt="Okul logosu">
+              </div>
+            </div>
+            <div class="meta-block">
+              <span>Odak</span>
+              <strong>Milli egemenlik, hukuk, toplum ve çağdaşlaşma</strong>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="hero-orb" aria-hidden="true">
-            <span class="orb-ring orb-ring-outer"></span>
-            <span class="orb-ring orb-ring-inner"></span>
-            <span class="orb-core"></span>
-            <span class="orb-star"></span>
-            <span class="hero-badge hero-badge-top">Cumhuriyet</span>
-            <span class="hero-badge hero-badge-top-right">Milliyetçilik</span>
-            <span class="hero-badge hero-badge-right">Laiklik</span>
-            <span class="hero-badge hero-badge-bottom">İnkılapçılık</span>
-            <span class="hero-badge hero-badge-bottom-left">Devletçilik</span>
-            <span class="hero-badge hero-badge-left">Halkçılık</span>
+        <div class="hero-stage reveal">
+          <div class="stage-card stage-card-main">
+            <span class="stage-label">Kurucu eksen</span>
+            <h2>Egemenlik, akıl ve toplum iradesi aynı zeminde birleşti.</h2>
+            <p>
+              Cumhuriyetin ilk yıllarında atılan adımlar birbirinden bağımsız değil; ortak bir
+              modernleşme vizyonunun parçalarıydı.
+            </p>
           </div>
 
-          <aside class="hero-panel">
-            <p class="panel-label">Ana fikir</p>
-            <h2>Egemenlik, akıl ve millet iradesi bir araya geldiğinde modern devlet doğar.</h2>
-            <p>
-              1923 sonrasında yapılan reformlar birbirinden kopuk değil; aynı hedefe yürüyen,
-              birbiriyle bağlantılı dönüşüm adımlarıydı.
-            </p>
-
-            <div class="panel-points">
-              <span>Bağımsızlık fikri</span>
-              <span>Hukukun üstünlüğü</span>
-              <span>Toplumsal yenilenme</span>
-            </div>
-          </aside>
+          <div class="stage-orbit">
+            <span>Cumhuriyetçilik</span>
+            <span>Milliyetçilik</span>
+            <span>Halkçılık</span>
+            <span>Laiklik</span>
+            <span>Devletçilik</span>
+            <span>İnkılapçılık</span>
+          </div>
         </div>
-      </section>
-
-      <div class="content-stack">
-        <section id="hikaye" class="section story">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Arka plan</span>
-            <h2>Neden Atatürk ilkelerine ihtiyaç duyuldu?</h2>
-            <p>
-              Osmanlı İmparatorluğu'nun son döneminde yaşanan askerî ve siyasal çözülme,
-              yalnızca yönetim değişikliğini değil; düşünce, hukuk, eğitim ve toplum düzeni
-              açısından yeni bir başlangıcı zorunlu kıldı.
-            </p>
-          </div>
-
-          <div class="story-layout">
-            <div class="story-copy reveal">
-              <p>
-                Milli Mücadele'nin başarısı, Türkiye'nin bağımsız yaşayabilmesi için güçlü bir
-                siyasi irade kadar ortak bir yön duygusuna da ihtiyaç olduğunu gösterdi.
-                Atatürk ilkeleri, işte bu yönün kısa ama kapsamlı özeti olarak ortaya çıktı.
-              </p>
-              <p>
-                Bu ilkeler yeni devleti hem içeride kurumsallaştırmak hem de dış baskılara
-                karşı dayanıklı hale getirmek için rehber oldu. Eğitim reformlarından hukuk
-                düzenine, ekonomik tercihlerden toplum anlayışına kadar geniş bir etki alanı
-                oluşturdu.
-              </p>
-
-              <blockquote class="quote-card">
-                <p>"Hayatta en hakiki mürşit ilimdir."</p>
-                <footer>Mustafa Kemal Atatürk</footer>
-              </blockquote>
-            </div>
-
-            <div class="story-side">
-              <figure class="story-visual-card reveal">
-                <img
-                  src="visual-republic.svg"
-                  alt="Cumhuriyetin kuruluş sürecini sembolleştiren tematik illüstrasyon"
-                  loading="lazy"
-                >
-                <figcaption>
-                  <strong>Milli Mücadele'den Cumhuriyet'e</strong>
-                  <span>Bağımsızlık, eğitim, hukuk ve kalkınma aynı dönüşüm hikayesinin parçalarıydı.</span>
-                </figcaption>
-              </figure>
-
-              <div class="story-grid">
-                <article class="info-card reveal">
-                  <img
-                    class="card-visual"
-                    src="principle-milliyetcilik.svg"
-                    alt="Bağımsızlık ve milli birlik temasını anlatan illüstrasyon"
-                    loading="lazy"
-                  >
-                  <span class="info-index">01</span>
-                  <h3>Bağımsızlık sonrası düzen kurma ihtiyacı</h3>
-                  <p>
-                    Savaşı kazanmak tek başına yeterli değildi; yeni devletin nasıl yönetileceği,
-                    hangi değerler üzerinde yükseleceği de tanımlanmalıydı.
-                  </p>
-                </article>
-
-                <article class="info-card reveal">
-                  <img
-                    class="card-visual"
-                    src="principle-halkcilik.svg"
-                    alt="Yurttaşlık ve toplumsal eşitliği anlatan illüstrasyon"
-                    loading="lazy"
-                  >
-                  <span class="info-index">02</span>
-                  <h3>Yurttaş odaklı yeni toplum tasarımı</h3>
-                  <p>
-                    Saltanattan cumhuriyete geçiş, tebaadan yurttaşa dönüşüm anlamına geliyordu.
-                    İlkeler bu geçişi çerçeveleyen temel prensipler oldu.
-                  </p>
-                </article>
-
-                <article class="info-card reveal">
-                  <img
-                    class="card-visual"
-                    src="principle-inkilapcilik.svg"
-                    alt="Yenilenme ve çağdaşlaşma fikrini anlatan illüstrasyon"
-                    loading="lazy"
-                  >
-                  <span class="info-index">03</span>
-                  <h3>Sürekli yenilenme fikri</h3>
-                  <p>
-                    Değişen dünyaya ayak uydurabilmek için durağan değil, kendini güncelleyebilen
-                    bir devlet ve toplum yapısı hedeflendi.
-                  </p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="ilkeler" class="section principles">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Altı ok</span>
-            <h2>Her ilke, Cumhuriyet projesinin ayrı bir yapı taşıdır.</h2>
-            <p>
-              Kartlardan birine tıklayarak ilkenin kısa özünü, tarihsel karşılığını ve bugüne
-              bıraktığı etkiyi inceleyebilirsin.
-            </p>
-          </div>
-
-          <div class="principles-accordion" role="tablist" aria-label="Atatürk ilkeleri">
-            <article class="principle-item reveal is-expanded" data-principle="cumhuriyetcilik">
-              <button class="principle-trigger" type="button" aria-expanded="true">
-                <span class="principle-number">01</span>
-                <div class="principle-header">
-                  <h3>Cumhuriyetçilik</h3>
-                  <p>Yönetimde millet iradesini esas alır; egemenliği kişiden alıp millete verir.</p>
-                </div>
-                <span class="expand-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="principle-content" hidden>
-                <div class="principle-body">
-                  <p class="principle-details-text"></p>
-                  
-                  <div class="principle-visuals-grid">
-                    <figure class="principle-visual">
-                      <img src="principle-cumhuriyetcilik.svg" alt="Cumhuriyetçilik ilkesini anlatan tematik illüstrasyon" loading="lazy">
-                    </figure>
-                    <figure class="principle-visual principle-visual-secondary">
-                      <img src="visual-egemenlik.svg" alt="Milli egemenlik görseli" loading="lazy">
-                    </figure>
-                  </div>
-                  
-                  <div class="principle-details">
-                    <div class="detail-chip">
-                      <span>Tarihsel odak</span>
-                      <strong class="principle-focus">TBMM'nin açılması, Cumhuriyet'in ilanı</strong>
-                    </div>
-                    <div class="detail-chip">
-                      <span>Öne çıkan sonuç</span>
-                      <strong class="principle-impact">Meşruiyetin kaynağı millet iradesi oldu.</strong>
-                    </div>
-                  </div>
-                  <div class="principle-timeline">
-                    <span class="timeline-label">Tarih akışı</span>
-                    <p class="principle-history"></p>
-                  </div>
-                  <p class="principle-note"></p>
-                </div>
-              </div>
-            </article>
-
-            <article class="principle-item reveal" data-principle="milliyetcilik">
-              <button class="principle-trigger" type="button" aria-expanded="false">
-                <span class="principle-number">02</span>
-                <div class="principle-header">
-                  <h3>Milliyetçilik</h3>
-                  <p>Ulusal birliği, bağımsızlığı ve ortak aidiyet duygusunu güçlendirir.</p>
-                </div>
-                <span class="expand-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="principle-content" hidden>
-                <div class="principle-body">
-                  <p class="principle-details-text"></p>
-                  <div class="principle-visuals-grid">
-                    <figure class="principle-visual">
-                      <img src="principle-milliyetcilik.svg" alt="Milliyetçilik ilkesini anlatan tematik illüstrasyon" loading="lazy">
-                    </figure>
-                    <figure class="principle-visual principle-visual-secondary">
-                      <img src="visual-republic.svg" alt="Cumhuriyet görseli" loading="lazy">
-                    </figure>
-                  </div>
-                  <div class="principle-details">
-                    <div class="detail-chip">
-                      <span>Tarihsel odak</span>
-                      <strong class="principle-focus"></strong>
-                    </div>
-                    <div class="detail-chip">
-                      <span>Öne çıkan sonuç</span>
-                      <strong class="principle-impact"></strong>
-                    </div>
-                  </div>
-                  <div class="principle-timeline">
-                    <span class="timeline-label">Tarih akışı</span>
-                    <p class="principle-history"></p>
-                  </div>
-                  <p class="principle-note"></p>
-                </div>
-              </div>
-            </article>
-
-            <article class="principle-item reveal" data-principle="halkcilik">
-              <button class="principle-trigger" type="button" aria-expanded="false">
-                <span class="principle-number">03</span>
-                <div class="principle-header">
-                  <h3>Halkçılık</h3>
-                  <p>Toplumda sınıf ayrıcalığını reddeder; eşit yurttaşlık fikrini öne çıkarır.</p>
-                </div>
-                <span class="expand-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="principle-content" hidden>
-                <div class="principle-body">
-                  <p class="principle-details-text"></p>
-                  <div class="principle-visuals-grid">
-                    <figure class="principle-visual">
-                      <img src="principle-halkcilik.svg" alt="Halkçılık ilkesini anlatan tematik illüstrasyon" loading="lazy">
-                    </figure>
-                    <figure class="principle-visual principle-visual-secondary">
-                      <img src="visual-kalkinma.svg" alt="Kalkınma görseli" loading="lazy">
-                    </figure>
-                  </div>
-                  <div class="principle-details">
-                    <div class="detail-chip">
-                      <span>Tarihsel odak</span>
-                      <strong class="principle-focus"></strong>
-                    </div>
-                    <div class="detail-chip">
-                      <span>Öne çıkan sonuç</span>
-                      <strong class="principle-impact"></strong>
-                    </div>
-                  </div>
-                  <div class="principle-timeline">
-                    <span class="timeline-label">Tarih akışı</span>
-                    <p class="principle-history"></p>
-                  </div>
-                  <p class="principle-note"></p>
-                </div>
-              </div>
-            </article>
-
-            <article class="principle-item reveal" data-principle="laiklik">
-              <button class="principle-trigger" type="button" aria-expanded="false">
-                <span class="principle-number">04</span>
-                <div class="principle-header">
-                  <h3>Laiklik</h3>
-                  <p>Devlet işlerini din kurallarından ayırarak hukuku ve kamusal düzeni akla dayandırır.</p>
-                </div>
-                <span class="expand-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="principle-content" hidden>
-                <div class="principle-body">
-                  <p class="principle-details-text"></p>
-                  <div class="principle-visuals-grid">
-                    <figure class="principle-visual">
-                      <img src="principle-laiklik.svg" alt="Laiklik ilkesini anlatan tematik illüstrasyon" loading="lazy">
-                    </figure>
-                    <figure class="principle-visual principle-visual-secondary">
-                      <img src="visual-egemenlik.svg" alt="Egemenlik görseli" loading="lazy">
-                    </figure>
-                  </div>
-                  <div class="principle-details">
-                    <div class="detail-chip">
-                      <span>Tarihsel odak</span>
-                      <strong class="principle-focus"></strong>
-                    </div>
-                    <div class="detail-chip">
-                      <span>Öne çıkan sonuç</span>
-                      <strong class="principle-impact"></strong>
-                    </div>
-                  </div>
-                  <div class="principle-timeline">
-                    <span class="timeline-label">Tarih akışı</span>
-                    <p class="principle-history"></p>
-                  </div>
-                  <p class="principle-note"></p>
-                </div>
-              </div>
-            </article>
-
-            <article class="principle-item reveal" data-principle="devletcilik">
-              <button class="principle-trigger" type="button" aria-expanded="false">
-                <span class="principle-number">05</span>
-                <div class="principle-header">
-                  <h3>Devletçilik</h3>
-                  <p>Ekonomik kalkınmada kamu öncülüğünü devreye alarak üretim gücünü artırmayı hedefler.</p>
-                </div>
-                <span class="expand-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="principle-content" hidden>
-                <div class="principle-body">
-                  <p class="principle-details-text"></p>
-                  <div class="principle-visuals-grid">
-                    <figure class="principle-visual">
-                      <img src="principle-devletcilik.svg" alt="Devletçilik ilkesini anlatan tematik illüstrasyon" loading="lazy">
-                    </figure>
-                    <figure class="principle-visual principle-visual-secondary">
-                      <img src="visual-kalkinma.svg" alt="Kalkınma görseli" loading="lazy">
-                    </figure>
-                  </div>
-                  <div class="principle-details">
-                    <div class="detail-chip">
-                      <span>Tarihsel odak</span>
-                      <strong class="principle-focus"></strong>
-                    </div>
-                    <div class="detail-chip">
-                      <span>Öne çıkan sonuç</span>
-                      <strong class="principle-impact"></strong>
-                    </div>
-                  </div>
-                  <div class="principle-timeline">
-                    <span class="timeline-label">Tarih akışı</span>
-                    <p class="principle-history"></p>
-                  </div>
-                  <p class="principle-note"></p>
-                </div>
-              </div>
-            </article>
-
-            <article class="principle-item reveal" data-principle="inkilapcilik">
-              <button class="principle-trigger" type="button" aria-expanded="false">
-                <span class="principle-number">06</span>
-                <div class="principle-header">
-                  <h3>İnkılapçılık</h3>
-                  <p>Yapılan yenilikleri korur, toplumu çağın gerisinde bırakmayan bir dönüşüm anlayışını savunur.</p>
-                </div>
-                <span class="expand-icon" aria-hidden="true">+</span>
-              </button>
-              <div class="principle-content" hidden>
-                <div class="principle-body">
-                  <p class="principle-details-text"></p>
-                  <div class="principle-visuals-grid">
-                    <figure class="principle-visual">
-                      <img src="principle-inkilapcilik.svg" alt="İnkılapçılık ilkesini anlatan tematik illüstrasyon" loading="lazy">
-                    </figure>
-                    <figure class="principle-visual principle-visual-secondary">
-                      <img src="visual-yenilik.svg" alt="Yenilik görseli" loading="lazy">
-                    </figure>
-                  </div>
-                  <div class="principle-details">
-                    <div class="detail-chip">
-                      <span>Tarihsel odak</span>
-                      <strong class="principle-focus"></strong>
-                    </div>
-                    <div class="detail-chip">
-                      <span>Öne çıkan sonuç</span>
-                      <strong class="principle-impact"></strong>
-                    </div>
-                  </div>
-                  <div class="principle-timeline">
-                    <span class="timeline-label">Tarih akışı</span>
-                    <p class="principle-history"></p>
-                  </div>
-                  <p class="principle-note"></p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="zaman-cizelgesi" class="section timeline">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Tarih akışı</span>
-            <h2>1919'dan 1937'ye uzanan dönüşüm çizgisi</h2>
-            <p>
-              Atatürk ilkeleri bir anda ortaya çıkmadı; Milli Mücadele'den anayasal güvenceye
-              uzanan süreçte adım adım şekillendi.
-            </p>
-          </div>
-
-          <div class="timeline-track">
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1919</span>
-              <div class="timeline-card">
-                <h3>Samsun'a çıkış ve ulusal direnişin kıvılcımı</h3>
-                <p>İşgallere karşı örgütlü bir milli direniş fikri doğdu; bağımsızlık hedefi somut bir siyasi programa dönüşmeye başladı.</p>
-              </div>
-            </article>
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1920</span>
-              <div class="timeline-card">
-                <h3>TBMM'nin açılması</h3>
-                <p>Ankara'da açılan meclis, halk iradesinin kurumsal ifadesi oldu ve Cumhuriyetçilik ilkesinin temeli güçlendi.</p>
-              </div>
-            </article>
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1923</span>
-              <div class="timeline-card">
-                <h3>Cumhuriyet'in ilanı</h3>
-                <p>Yeni devletin yönetim şekli açık biçimde tanımlandı; egemenliğin kaynağı millet olarak ilan edildi.</p>
-              </div>
-            </article>
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1924</span>
-              <div class="timeline-card">
-                <h3>Halifeliğin kaldırılması ve eğitim birliği</h3>
-                <p>Laikleşme ve merkezi eğitim düzeni yönünde atılan adımlar, hukuk ve kurumların yeniden inşasını hızlandırdı.</p>
-              </div>
-            </article>
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1928</span>
-              <div class="timeline-card">
-                <h3>Harf Devrimi ve kültürel dönüşüm</h3>
-                <p>Toplumun bilgiye erişimini kolaylaştıran değişimler, İnkılapçılık ilkesinin günlük yaşamdaki görünürlüğünü artırdı.</p>
-              </div>
-            </article>
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1934</span>
-              <div class="timeline-card">
-                <h3>Sosyal ve siyasal hakların genişlemesi</h3>
-                <p>Soyadı Kanunu ve kadınlara siyasal hakların tanınması, eşit yurttaşlık anlayışını daha görünür hale getirdi.</p>
-              </div>
-            </article>
-            <article class="timeline-item reveal">
-              <span class="timeline-year">1937</span>
-              <div class="timeline-card">
-                <h3>Altı ilkenin anayasaya girmesi</h3>
-                <p>Atatürk ilkeleri anayasal güvenceye kavuşarak Cumhuriyet'in resmi ideolojik çerçevesi içinde yer aldı.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="section gallery-showcase">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Görsel bakış</span>
-            <h2>İlkelerin toplum hayatına yansıyan yüzü</h2>
-            <p>
-              Milli egemenlik, eğitimde yenilik ve ekonomik kalkınma; Atatürk ilkelerinin
-              günlük yaşamda en görünür olduğu başlıklardan bazılarıdır.
-            </p>
-          </div>
-
-          <div class="showcase-grid">
-            <figure class="showcase-card reveal">
-              <img
-                src="visual-egemenlik.svg"
-                alt="Milli egemenlik ve meclis fikrini anlatan illüstrasyon"
-                loading="lazy"
-              >
-              <figcaption>
-                <h3>Egemenlik ve Meclis</h3>
-                <p>Yönetim anlayışı kişi merkezinden millet merkezine taşındı.</p>
-              </figcaption>
-            </figure>
-
-            <figure class="showcase-card reveal">
-              <img
-                src="visual-yenilik.svg"
-                alt="Eğitim ve kültürel yenilenmeyi anlatan illüstrasyon"
-                loading="lazy"
-              >
-              <figcaption>
-                <h3>Eğitim ve Kültürel Yenilik</h3>
-                <p>Bilgiye erişim ve çağdaş eğitim, dönüşümün temel taşı haline geldi.</p>
-              </figcaption>
-            </figure>
-
-            <figure class="showcase-card reveal">
-              <img
-                src="visual-kalkinma.svg"
-                alt="Sanayi ve ekonomik kalkınmayı anlatan illüstrasyon"
-                loading="lazy"
-              >
-              <figcaption>
-                <h3>Kalkınma ve Üretim</h3>
-                <p>Kamu öncülüğündeki yatırımlar genç Cumhuriyetin ekonomik omurgasını güçlendirdi.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section id="miras" class="section legacy">
-          <div class="section-heading reveal">
-            <span class="eyebrow">Bugüne etkisi</span>
-            <h2>Bu ilkeler neden bugün hâlâ konuşuluyor?</h2>
-            <p>
-              Çünkü mesele sadece geçmişte yapılmış reformlar değil; Türkiye'de devlet-toplum
-              ilişkisinin hangi değerler üzerine kurulduğu sorusudur.
-            </p>
-          </div>
-
-          <div class="legacy-grid">
-            <article class="legacy-card reveal">
-              <img
-                class="card-visual"
-                src="principle-cumhuriyetcilik.svg"
-                alt="Demokratik meşruiyet temasını anlatan illüstrasyon"
-                loading="lazy"
-              >
-              <h3>Demokratik meşruiyet</h3>
-              <p>Siyasal iktidarın meşruiyetini hanedandan değil, yurttaşın iradesinden alan anlayış Cumhuriyetçilik ile kalıcılaştı.</p>
-            </article>
-            <article class="legacy-card reveal">
-              <img
-                class="card-visual"
-                src="principle-laiklik.svg"
-                alt="Kamusal akıl ve hukuk temasını anlatan illüstrasyon"
-                loading="lazy"
-              >
-              <h3>Kamusal akıl ve hukuk</h3>
-              <p>Laiklik ve Halkçılık, devlet düzeninin ayrıcalık değil eşitlik ve ortak hukuk ilkeleri üzerinden kurulmasına katkı sağladı.</p>
-            </article>
-            <article class="legacy-card reveal">
-              <img
-                class="card-visual"
-                src="principle-devletcilik.svg"
-                alt="Değişime açık toplum ve kalkınma temasını anlatan illüstrasyon"
-                loading="lazy"
-              >
-              <h3>Değişime açık toplum</h3>
-              <p>İnkılapçılık ve Devletçilik, Türkiye'nin yalnızca varlığını sürdürmesini değil; çağın ihtiyaçlarına göre kendini yenilemesini de hedefledi.</p>
-            </article>
-          </div>
-        </section>
       </div>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <p>Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi için 12-A Bilişim Teknolojileri Sınıfından İsa YAŞAN ve Buse KAPLAN Tarafından Hazırlanmıştır.</p>
-      <a href="#top">Başa dön</a>
-    </footer>
-  </div>
+    <section class="intro-ribbon reveal">
+      <div class="ribbon-line"></div>
+      <div class="ribbon-grid">
+        <article>
+          <span>01</span>
+          <p>Bir devletin nasıl yönetileceğini belirleyen siyasal omurga</p>
+        </article>
+        <article>
+          <span>02</span>
+          <p>Toplumu yeniden tanımlayan yurttaşlık ve eşitlik anlayışı</p>
+        </article>
+        <article>
+          <span>03</span>
+          <p>Değişimi sürekli kılan yenilenme ve kalkınma refleksi</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hikaye" class="story-panel section-shell">
+      <div class="section-top reveal">
+        <div class="section-top-copy">
+          <span class="section-tag">Arka Plan</span>
+          <h2>Neden Atatürk ilkelerine ihtiyaç duyuldu?</h2>
+        </div>
+        <div class="section-top-note">
+          <p>
+            İmparatorluğun çözülüşü ile Cumhuriyetin kuruluşu arasındaki kırılma, yalnızca siyasi bir
+            dönüşüm değil; hukuk, eğitim, yurttaşlık ve devlet yapısında yeni bir yön arayışıydı.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-layout">
+        <article class="story-text reveal">
+          <p>
+            Osmanlı İmparatorluğu'nun son döneminde yaşanan askerî ve siyasal çözülme, yalnızca
+            bir yönetim değişikliği ihtiyacını doğurmadı. Aynı zamanda hukuk, eğitim, ekonomi ve
+            toplumsal düzen açısından yeni bir başlangıcın zorunlu olduğunu gösterdi.
+          </p>
+          <p>
+            Milli Mücadele'nin başarısı, bağımsızlığın tek başına yeterli olmadığını ortaya koydu.
+            Yeni devletin hangi değerler üzerinde yükseleceği, nasıl bir toplum hedefleyeceği ve
+            hangi kurumlarla kalıcı hale geleceği de tanımlanmalıydı.
+          </p>
+        </article>
+
+        <aside class="story-quote reveal">
+          <p>"Hayatta en hakiki mürşit ilimdir."</p>
+          <span>Mustafa Kemal Atatürk</span>
+        </aside>
+      </div>
+
+      <div class="story-cards">
+        <article class="story-card reveal">
+          <img src="visual-republic.svg" alt="Cumhuriyetin kuruluş sürecini anlatan illüstrasyon" loading="lazy">
+          <div>
+            <span>Milli Mücadele</span>
+            <h3>Bağımsızlık sonrasında düzen kurma ihtiyacı</h3>
+            <p>Savaşın kazanılması, nasıl bir devlet kurulacağı sorusunu daha görünür hale getirdi.</p>
+          </div>
+        </article>
+
+        <article class="story-card reveal">
+          <img src="visual-egemenlik.svg" alt="Milli egemenlik temasını anlatan görsel" loading="lazy">
+          <div>
+            <span>Egemenlik</span>
+            <h3>Yönetim gücünün kaynağı yeniden tanımlandı</h3>
+            <p>Meşruiyet, kişi merkezli yapıdan çıkarılıp millet iradesine dayandırıldı.</p>
+          </div>
+        </article>
+
+        <article class="story-card reveal">
+          <img src="visual-yenilik.svg" alt="Yenilenme ve çağdaşlaşma temasını anlatan görsel" loading="lazy">
+          <div>
+            <span>Yenilenme</span>
+            <h3>Toplumun kendini sürekli güncellemesi hedeflendi</h3>
+            <p>İlkeler, durağan değil gelişen bir Cumhuriyet fikrinin kısa özeti oldu.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ilkeler" class="principles-showcase section-shell">
+      <div class="section-top reveal">
+        <div class="section-top-copy">
+          <span class="section-tag">Altı İlke</span>
+          <h2>Her ilke, Cumhuriyet projesinin ayrı ama birbirine bağlı bir taşıdır.</h2>
+        </div>
+        <div class="section-top-note">
+          <p>
+            Aşağıdaki kartlar, her ilkenin tarihsel bağlamını, doğurduğu sonucu ve bugün bıraktığı
+            düşünsel izi birlikte okumak için tasarlandı.
+          </p>
+        </div>
+      </div>
+
+      <div class="principles-accordion" role="tablist" aria-label="Atatürk ilkeleri">
+        <article class="principle-item reveal is-expanded" data-principle="cumhuriyetcilik">
+          <button class="principle-trigger" type="button" aria-expanded="true">
+            <span class="principle-index">01</span>
+            <div class="principle-heading">
+              <h3>Cumhuriyetçilik</h3>
+              <p>Yönetimde millet iradesini esas alır; egemenliği kişiden alıp millete verir.</p>
+            </div>
+            <span class="principle-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="principle-content" hidden>
+            <div class="principle-body">
+              <figure class="principle-art">
+                <img src="principle-cumhuriyetcilik.svg" alt="Cumhuriyetçilik ilkesini anlatan illüstrasyon" loading="lazy">
+              </figure>
+              <div class="principle-copy">
+                <p class="principle-details-text"></p>
+                <div class="principle-facts">
+                  <article>
+                    <span>Tarihsel odak</span>
+                    <strong class="principle-focus"></strong>
+                  </article>
+                  <article>
+                    <span>Öne çıkan sonuç</span>
+                    <strong class="principle-impact"></strong>
+                  </article>
+                </div>
+                <div class="principle-history-box">
+                  <span>Tarih akışı</span>
+                  <p class="principle-history"></p>
+                </div>
+                <p class="principle-note"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="principle-item reveal" data-principle="milliyetcilik">
+          <button class="principle-trigger" type="button" aria-expanded="false">
+            <span class="principle-index">02</span>
+            <div class="principle-heading">
+              <h3>Milliyetçilik</h3>
+              <p>Ulusal birliği, bağımsızlığı ve ortak aidiyet duygusunu güçlendirir.</p>
+            </div>
+            <span class="principle-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="principle-content" hidden>
+            <div class="principle-body">
+              <figure class="principle-art">
+                <img src="principle-milliyetcilik.svg" alt="Milliyetçilik ilkesini anlatan illüstrasyon" loading="lazy">
+              </figure>
+              <div class="principle-copy">
+                <p class="principle-details-text"></p>
+                <div class="principle-facts">
+                  <article>
+                    <span>Tarihsel odak</span>
+                    <strong class="principle-focus"></strong>
+                  </article>
+                  <article>
+                    <span>Öne çıkan sonuç</span>
+                    <strong class="principle-impact"></strong>
+                  </article>
+                </div>
+                <div class="principle-history-box">
+                  <span>Tarih akışı</span>
+                  <p class="principle-history"></p>
+                </div>
+                <p class="principle-note"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="principle-item reveal" data-principle="halkcilik">
+          <button class="principle-trigger" type="button" aria-expanded="false">
+            <span class="principle-index">03</span>
+            <div class="principle-heading">
+              <h3>Halkçılık</h3>
+              <p>Ayrıcalıkları reddeder; eşit yurttaşlık fikrini öne çıkarır.</p>
+            </div>
+            <span class="principle-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="principle-content" hidden>
+            <div class="principle-body">
+              <figure class="principle-art">
+                <img src="principle-halkcilik.svg" alt="Halkçılık ilkesini anlatan illüstrasyon" loading="lazy">
+              </figure>
+              <div class="principle-copy">
+                <p class="principle-details-text"></p>
+                <div class="principle-facts">
+                  <article>
+                    <span>Tarihsel odak</span>
+                    <strong class="principle-focus"></strong>
+                  </article>
+                  <article>
+                    <span>Öne çıkan sonuç</span>
+                    <strong class="principle-impact"></strong>
+                  </article>
+                </div>
+                <div class="principle-history-box">
+                  <span>Tarih akışı</span>
+                  <p class="principle-history"></p>
+                </div>
+                <p class="principle-note"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="principle-item reveal" data-principle="laiklik">
+          <button class="principle-trigger" type="button" aria-expanded="false">
+            <span class="principle-index">04</span>
+            <div class="principle-heading">
+              <h3>Laiklik</h3>
+              <p>Kamusal düzenin hukuk ve akıl zemininde şekillenmesini sağlar.</p>
+            </div>
+            <span class="principle-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="principle-content" hidden>
+            <div class="principle-body">
+              <figure class="principle-art">
+                <img src="principle-laiklik.svg" alt="Laiklik ilkesini anlatan illüstrasyon" loading="lazy">
+              </figure>
+              <div class="principle-copy">
+                <p class="principle-details-text"></p>
+                <div class="principle-facts">
+                  <article>
+                    <span>Tarihsel odak</span>
+                    <strong class="principle-focus"></strong>
+                  </article>
+                  <article>
+                    <span>Öne çıkan sonuç</span>
+                    <strong class="principle-impact"></strong>
+                  </article>
+                </div>
+                <div class="principle-history-box">
+                  <span>Tarih akışı</span>
+                  <p class="principle-history"></p>
+                </div>
+                <p class="principle-note"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="principle-item reveal" data-principle="devletcilik">
+          <button class="principle-trigger" type="button" aria-expanded="false">
+            <span class="principle-index">05</span>
+            <div class="principle-heading">
+              <h3>Devletçilik</h3>
+              <p>Kalkınmada devletin yönlendirici ve yatırımcı rolünü öne çıkarır.</p>
+            </div>
+            <span class="principle-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="principle-content" hidden>
+            <div class="principle-body">
+              <figure class="principle-art">
+                <img src="principle-devletcilik.svg" alt="Devletçilik ilkesini anlatan illüstrasyon" loading="lazy">
+              </figure>
+              <div class="principle-copy">
+                <p class="principle-details-text"></p>
+                <div class="principle-facts">
+                  <article>
+                    <span>Tarihsel odak</span>
+                    <strong class="principle-focus"></strong>
+                  </article>
+                  <article>
+                    <span>Öne çıkan sonuç</span>
+                    <strong class="principle-impact"></strong>
+                  </article>
+                </div>
+                <div class="principle-history-box">
+                  <span>Tarih akışı</span>
+                  <p class="principle-history"></p>
+                </div>
+                <p class="principle-note"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="principle-item reveal" data-principle="inkilapcilik">
+          <button class="principle-trigger" type="button" aria-expanded="false">
+            <span class="principle-index">06</span>
+            <div class="principle-heading">
+              <h3>İnkılapçılık</h3>
+              <p>Değişimi koruyan değil, sürekli üreten bir yenilenme anlayışı kurar.</p>
+            </div>
+            <span class="principle-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="principle-content" hidden>
+            <div class="principle-body">
+              <figure class="principle-art">
+                <img src="principle-inkilapcilik.svg" alt="İnkılapçılık ilkesini anlatan illüstrasyon" loading="lazy">
+              </figure>
+              <div class="principle-copy">
+                <p class="principle-details-text"></p>
+                <div class="principle-facts">
+                  <article>
+                    <span>Tarihsel odak</span>
+                    <strong class="principle-focus"></strong>
+                  </article>
+                  <article>
+                    <span>Öne çıkan sonuç</span>
+                    <strong class="principle-impact"></strong>
+                  </article>
+                </div>
+                <div class="principle-history-box">
+                  <span>Tarih akışı</span>
+                  <p class="principle-history"></p>
+                </div>
+                <p class="principle-note"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="zaman-cizelgesi" class="timeline-panel section-shell">
+      <div class="section-top reveal">
+        <div class="section-top-copy">
+          <span class="section-tag">Zaman Çizgisi</span>
+          <h2>1919'dan 1937'ye uzanan dönüşüm adım adım şekillendi.</h2>
+        </div>
+        <div class="section-top-note">
+          <p>
+            İlkeler bir anda ortaya çıkmadı; her biri savaş yıllarından anayasal güvenceye uzanan
+            birikimli bir sürecin içinde görünür hale geldi.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-grid">
+        <article class="timeline-card reveal">
+          <span>1919</span>
+          <h3>Samsun'a çıkış</h3>
+          <p>Ulusal direnişin örgütlü ve siyasal bir programa dönüşeceği süreç başladı.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>1920</span>
+          <h3>TBMM'nin açılması</h3>
+          <p>Millet iradesinin kurumsal temeli güçlenerek Cumhuriyetçilik için zemin oluştu.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>1923</span>
+          <h3>Cumhuriyetin ilanı</h3>
+          <p>Yönetim biçimi açıkça tanımlandı; egemenliğin kaynağı millet olarak belirlendi.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>1924</span>
+          <h3>Halifeliğin kaldırılması</h3>
+          <p>Laiklik ve eğitim birliği yolunda kurumları yeniden şekillendiren adımlar atıldı.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>1928</span>
+          <h3>Harf Devrimi</h3>
+          <p>Bilgiye erişim ve kültürel yenilenme günlük hayatın görünür bir parçası haline geldi.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>1934</span>
+          <h3>Yurttaşlık haklarının genişlemesi</h3>
+          <p>Eşit yurttaşlık anlayışı sosyal ve siyasal haklarla daha belirgin biçimde kuruldu.</p>
+        </article>
+        <article class="timeline-card reveal">
+          <span>1937</span>
+          <h3>İlkelerin anayasaya girmesi</h3>
+          <p>Altı ilke, Cumhuriyetin resmî düşünce çerçevesinde anayasal dayanak kazandı.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-panel section-shell">
+      <div class="section-top reveal">
+        <div class="section-top-copy">
+          <span class="section-tag">Görsel Katman</span>
+          <h2>İlkelerin toplum hayatına yansıyan yüzü</h2>
+        </div>
+        <div class="section-top-note">
+          <p>
+            Milli egemenlik, eğitimde yenilik ve kalkınma hamlesi; Cumhuriyetin gündelik yaşamdaki
+            en görünür dönüşüm yüzlerinden bazılarıydı.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-layout">
+        <figure class="gallery-main reveal">
+          <img src="visual-kalkinma.svg" alt="Kalkınma ve üretim temasını anlatan illüstrasyon" loading="lazy">
+          <figcaption>
+            <span>Kalkınma ve üretim</span>
+            <p>Kamu öncülüğündeki yatırımlar, genç Cumhuriyetin ekonomik omurgasını güçlendirdi.</p>
+          </figcaption>
+        </figure>
+
+        <div class="gallery-side">
+          <figure class="gallery-mini reveal">
+            <img src="visual-egemenlik.svg" alt="Egemenlik ve meclis fikrini anlatan illüstrasyon" loading="lazy">
+            <figcaption>Egemenlik ve Meclis</figcaption>
+          </figure>
+          <figure class="gallery-mini reveal">
+            <img src="visual-yenilik.svg" alt="Eğitim ve kültürel yeniliği anlatan illüstrasyon" loading="lazy">
+            <figcaption>Eğitim ve yenilik</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="miras" class="legacy-panel section-shell">
+      <div class="section-top reveal">
+        <div class="section-top-copy">
+          <span class="section-tag">Bugüne Etkisi</span>
+          <h2>Bu ilkeler neden bugün hâlâ konuşuluyor?</h2>
+        </div>
+        <div class="section-top-note">
+          <p>
+            Çünkü bu başlıklar geçmişte kalmış reform listeleri değil; Türkiye'de devlet, toplum ve
+            kamusal düzenin hangi değerler üzerinde kurulacağı sorusunun özeti.
+          </p>
+        </div>
+      </div>
+
+      <div class="legacy-layout">
+        <article class="legacy-wide reveal">
+          <p>
+            Çünkü mesele yalnızca geçmişte yapılmış reformlar değil; Türkiye'de devlet-toplum
+            ilişkisinin hangi değerler üzerine kurulduğu sorusudur. Cumhuriyetçilik siyasal
+            meşruiyeti, Halkçılık eşit yurttaşlığı, Laiklik ortak hukuk zeminini, Devletçilik
+            ekonomik dayanıklılığı, İnkılapçılık ise süreklilik taşıyan değişimi temsil eder.
+          </p>
+        </article>
+
+        <div class="legacy-grid">
+          <article class="legacy-card reveal">
+            <h3>Demokratik meşruiyet</h3>
+            <p>İktidarın kaynağını yurttaş iradesine dayandıran yaklaşım, modern yönetimin merkezine yerleşti.</p>
+          </article>
+          <article class="legacy-card reveal">
+            <h3>Kamusal akıl ve hukuk</h3>
+            <p>Ortak yaşamın eşitlik ve rasyonel hukuk ilkeleri üzerinden kurulması kalıcı hale geldi.</p>
+          </article>
+          <article class="legacy-card reveal">
+            <h3>Değişime açık toplum</h3>
+            <p>Yenilenme fikri, toplumun çağın ihtiyaçlarına göre kendini güncelleme kapasitesini güçlendirdi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kahramankazan Ticaret Mesleki ve Teknik Anadolu Lisesi için 12-A Bilişim Teknolojileri sınıfından İsa Yaşan ve Buse Kaplan tarafından hazırlanmıştır.</p>
+    <a href="#top">Başa dön</a>
+  </footer>
 
   <script src="script.js"></script>
 </body>
