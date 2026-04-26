@@ -848,3 +848,366 @@ main,
     align-items: flex-start;
   }
 }
+
+/* ======== MODERN FOTOĞRAF ANİMASYONLARI ======== */
+
+/* Fade & Slide Animations */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px) rotateY(25deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px) rotateY(-25deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes zoomBlur {
+  from {
+    opacity: 0;
+    transform: scale(1.15);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Story Cards - Kaydıkça yandan çıkmalı */
+.story-card {
+  perspective: 1000px;
+  border-radius: 24px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.320, 1),
+              box-shadow 400ms ease,
+              border-color 400ms ease !important;
+}
+
+.story-card:nth-child(1) {
+  animation: slideInFromLeft 800ms ease-out 100ms both;
+}
+
+.story-card:nth-child(2) {
+  animation: slideInFromRight 800ms ease-out 200ms both;
+}
+
+.story-card:nth-child(3) {
+  animation: slideInFromLeft 800ms ease-out 300ms both;
+}
+
+.story-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 32px 64px rgba(180, 58, 47, 0.15), 0 0 40px rgba(198, 154, 73, 0.08);
+  border-color: rgba(180, 58, 47, 0.4) !important;
+}
+
+.story-card img {
+  display: block;
+  transition: transform 500ms cubic-bezier(0.23, 1, 0.320, 1),
+              filter 500ms ease;
+  transform-origin: center;
+}
+
+.story-card:hover img {
+  transform: scale(1.08) rotateZ(2deg);
+  filter: brightness(1.12) contrast(1.08);
+}
+
+/* Principle-Item (İlke Kartları) */
+.principle-item .principle-art {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.principle-item .principle-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(198, 154, 73, 0.05), rgba(180, 58, 47, 0.05));
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.principle-item.is-expanded .principle-art::before {
+  opacity: 1;
+}
+
+.principle-item .principle-art img {
+  transition: transform 600ms cubic-bezier(0.23, 1, 0.320, 1),
+              filter 600ms ease;
+  animation: zoomBlur 700ms ease-out;
+}
+
+.principle-item:hover .principle-art img {
+  transform: scale(1.06) rotate(-1deg);
+  filter: brightness(1.1) saturate(1.12);
+}
+
+/* Gallery Main - Büyük Fotoğraf */
+.gallery-main {
+  position: relative;
+  overflow: hidden;
+  border-radius: 36px;
+  animation: slideInFromBottom 800ms ease-out;
+}
+
+.gallery-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(198, 154, 73, 0) 0%,
+    rgba(180, 58, 47, 0.08) 100%);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.gallery-main:hover::before {
+  opacity: 1;
+}
+
+.gallery-main img {
+  transition: transform 700ms cubic-bezier(0.23, 1, 0.320, 1),
+              filter 700ms ease,
+              brightness 700ms ease;
+  filter: brightness(0.98) contrast(1.02);
+}
+
+.gallery-main:hover img {
+  transform: scale(1.05) translate(-4px, -4px);
+  filter: brightness(1.08) contrast(1.08) saturate(1.1);
+}
+
+/* Gallery Mini - Küçük Fotoğraflar */
+.gallery-mini {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.gallery-mini:nth-child(1) {
+  animation: slideInFromRight 800ms ease-out 200ms both;
+}
+
+.gallery-mini:nth-child(2) {
+  animation: slideInFromLeft 800ms ease-out 300ms both;
+}
+
+.gallery-mini:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 24px 48px rgba(180, 58, 47, 0.12);
+  border-color: rgba(180, 58, 47, 0.3) !important;
+}
+
+.gallery-mini img {
+  transition: transform 500ms cubic-bezier(0.23, 1, 0.320, 1),
+              filter 500ms ease;
+}
+
+.gallery-mini:hover img {
+  transform: scale(1.12) rotate(3deg);
+  filter: brightness(1.1) contrast(1.12);
+}
+
+/* Timeline Cards */
+.timeline-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(180deg, var(--accent), var(--gold));
+  transition: height 500ms cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 10;
+}
+
+.timeline-card:hover {
+  transform: translateX(12px) translateY(-6px);
+  box-shadow: 0 20px 40px rgba(180, 58, 47, 0.1);
+  border-color: rgba(180, 58, 47, 0.3) !important;
+}
+
+.timeline-card:hover::before {
+  height: 100%;
+}
+
+/* Parallax Effect - Kaydıkça paralel hareket */
+.gallery-layout {
+  perspective: 1200px;
+}
+
+.gallery-main {
+  transform-style: preserve-3d;
+}
+
+/* Image Overlay Effects */
+img {
+  position: relative;
+}
+
+img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, 
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%);
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
+.story-card:hover img::before,
+.gallery-mini:hover img::before,
+.gallery-main:hover img::before {
+  opacity: 1;
+}
+
+/* Stagger Animation İçin */
+.story-cards,
+.gallery-side {
+  --stagger-delay: 100ms;
+}
+
+.story-card:nth-child(1) { --item-delay: calc(var(--stagger-delay) * 1); }
+.story-card:nth-child(2) { --item-delay: calc(var(--stagger-delay) * 2); }
+.story-card:nth-child(3) { --item-delay: calc(var(--stagger-delay) * 3); }
+
+/* Responsive - Mobile İçin Optimize */
+@media (max-width: 768px) {
+  .story-card {
+    animation: slideInFromBottom 600ms ease-out !important;
+  }
+
+  .story-card:nth-child(1),
+  .story-card:nth-child(2),
+  .story-card:nth-child(3) {
+    animation: slideInFromBottom 600ms ease-out !important;
+  }
+
+  .gallery-mini:nth-child(1),
+  .gallery-mini:nth-child(2) {
+    animation: slideInFromBottom 600ms ease-out !important;
+  }
+
+  .story-card img,
+  .gallery-mini img,
+  .gallery-main img {
+    height: auto;
+  }
+
+  .principle-item .principle-art img {
+    max-height: 200px;
+  }
+
+  .story-card:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+
+  .gallery-mini:hover {
+    transform: translateY(-6px) scale(1.02);
+  }
+
+  .story-card:hover img,
+  .gallery-mini:hover img {
+    transform: scale(1.04) rotate(1deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .story-card,
+  .gallery-mini,
+  .timeline-card {
+    border-radius: 20px;
+  }
+
+  .story-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .gallery-mini:hover,
+  .timeline-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  .gallery-main img {
+    height: 15rem;
+  }
+
+  .story-card img {
+    height: 8rem;
+  }
+
+  .gallery-mini img {
+    height: 8rem;
+  }
+
+  .principle-item .principle-art img {
+    max-height: 150px;
+  }
+}
+
+/* Advanced Hover Metrics */
+@supports (backdrop-filter: blur(10px)) {
+  .story-card:hover,
+  .gallery-mini:hover {
+    background: rgba(255, 250, 242, 1);
+    backdrop-filter: blur(12px);
+  }
+}
+
+/* Focus States (Accessibility) */
+.story-card:focus-within,
+.gallery-mini:focus-within,
+.timeline-card:focus-within {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}

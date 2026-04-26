@@ -132,3 +132,85 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealElements.forEach((element) => revealObserver.observe(element));
+
+/* ========== ADVANCED FOTOĞRAF ANİMASYONLARI ========== */
+
+// Parallax scroll effect
+const parallaxImages = document.querySelectorAll(".gallery-main img, .story-card img");
+
+if (parallaxImages.length > 0) {
+  const handleParallax = (e) => {
+    parallaxImages.forEach((img) => {
+      const rect = img.getBoundingClientRect();
+      const yOffset = (rect.top / window.innerHeight) * 15;
+      img.style.transform = `translateY(${yOffset}px) ${img.parentElement?.classList.contains("gallery-main") ? "scale(1.02)" : "scale(1)"}`;
+    });
+  };
+
+  window.addEventListener("scroll", () => {
+    requestAnimationFrame(handleParallax);
+  }, { passive: true });
+}
+
+// Image glow effect on hover
+const images = document.querySelectorAll(".story-card img, .gallery-mini img, .principle-art img");
+
+images.forEach((img) => {
+  img.addEventListener("mousemove", (e) => {
+    const rect = img.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    img.style.cssText = `
+      background: radial-gradient(circle at ${x}px ${y}px, rgba(198, 154, 73, 0.2), transparent);
+    `;
+  });
+
+  img.addEventListener("mouseleave", () => {
+    img.style.cssText = "";
+  });
+});
+
+// Scroll reveal with stagger animation
+document.addEventListener("DOMContentLoaded", () => {
+  const observerOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -100px 0px"
+  };
+
+  const scrollRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("is-visible");
+        }, index * 100);
+        scrollRevealObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".story-card, .gallery-mini, .timeline-card").forEach((el) => {
+    scrollRevealObserver.observe(el);
+  });
+});
+
+// Smooth scroll animations for images
+const imageContainers = document.querySelectorAll(".story-card, .gallery-layout, .principle-art");
+
+imageContainers.forEach((container) => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const images = entry.target.querySelectorAll("img");
+          images.forEach((img) => {
+            img.style.transition = "transform 600ms cubic-bezier(0.23, 1, 0.320, 1), filter 600ms ease";
+          });
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(container);
+});
