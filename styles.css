@@ -1214,3 +1214,53 @@ img::before {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
+/* ============================= */
+/* 🔥 İLKELER FIX (SENİN İSTEDİĞİN) */
+/* ============================= */
+
+/* Kapalıyken açıklamayı gizle */
+.principle-trigger[aria-expanded="false"] .principle-heading p {
+  display: none;
+}
+
+/* Açıkken tekrar göster */
+.principle-trigger[aria-expanded="true"] .principle-heading p {
+  display: block;
+}
+
+
+/* ============================= */
+/* 📱 MOBİL DÜZELTME */
+/* ============================= */
+
+@media (max-width: 760px) {
+
+  /* grid yerine flex yapıyoruz */
+  .principle-trigger {
+    display: flex !important;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  /* sayı sabit kalsın */
+  .principle-index {
+    flex-shrink: 0;
+  }
+
+  /* başlık + açıklama */
+  .principle-heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* başlık tek satır gibi davransın */
+  .principle-heading h3 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  /* toggle sağda kalsın */
+  .principle-toggle {
+    margin-left: auto;
+  }
+}
