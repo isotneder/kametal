@@ -113,6 +113,25 @@ if (principleItems.length > 0) {
   expandPrinciple(principleItems[0]);
 }
 
+/* ========== ORBİT BLOKLAR TIKLAMA İŞLEMLERİ ========== */
+const orbitPrinciples = document.querySelectorAll(".orbit-principle");
+
+orbitPrinciples.forEach((button) => {
+  button.addEventListener("click", () => {
+    const principleKey = button.dataset.principle;
+    const targetItem = document.querySelector(`.principle-item[data-principle=\"${principleKey}\"]`);
+    
+    if (targetItem) {
+      expandPrinciple(targetItem);
+      
+      // Açılan ilke kartına kaydır
+      setTimeout(() => {
+        targetItem.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 100);
+    }
+  });
+});
+
 window.addEventListener("load", () => {
   if (window.location.hash) {
     window.history.replaceState(null, "", window.location.pathname + window.location.search);
