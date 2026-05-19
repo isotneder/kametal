@@ -13,6 +13,8 @@
   --radius-lg: 24px;
   --radius-md: 18px;
   --max-width: 1240px;
+  --content-card-width: 22rem;
+  --mobile-card-gutter: 1rem;
 }
 
 *,
@@ -522,16 +524,21 @@ main,
 
 .story-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, min(100%, var(--content-card-width)));
   gap: 1.2rem;
   margin-top: 1rem;
   align-items: stretch;
+  justify-content: center;
+  justify-items: center;
 }
 
 .story-card,
 .legacy-card,
 .gallery-mini,
 .timeline-card {
+  width: 100%;
+  max-width: var(--content-card-width);
+  justify-self: center;
   padding: 1.2rem;
   border-radius: var(--radius-lg);
   background: var(--paper);
@@ -855,7 +862,9 @@ main,
   .story-cards,
   .legacy-grid,
   .timeline-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, min(100%, var(--content-card-width)));
+    justify-content: center;
+    justify-items: center;
   }
 }
 
@@ -869,10 +878,32 @@ main,
     gap: 1.5rem;
   }
 
+  .hero-content,
+  .hero-stage {
+    width: min(calc(100% - var(--mobile-card-gutter)), var(--content-card-width));
+    max-width: var(--content-card-width);
+    justify-self: center;
+  }
+
+  .hero-content {
+    padding: 1.2rem;
+  }
+
+  .hero-copy {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+
   .hero h1,
   .section-top h2,
   .stage-card-main h2 {
     max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.35rem, 12vw, 3.2rem);
+    line-height: 1;
   }
 
   .section-top {
@@ -891,14 +922,35 @@ main,
 
   .hero-meta,
   .ribbon-grid,
-  .story-cards,
   .principle-facts,
-  .legacy-grid,
-  .timeline-grid {
+  .legacy-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero-copy,
+  .story-cards,
+  .timeline-grid {
+    grid-template-columns: minmax(0, min(calc(100% - var(--mobile-card-gutter)), var(--content-card-width)));
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .story-layout {
+    grid-template-columns: minmax(0, min(calc(100% - var(--mobile-card-gutter)), var(--content-card-width)));
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .story-text,
+  .story-quote {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .story-card,
+  .timeline-card {
+    max-width: 100%;
+  }
+
   .hero-stage,
   .story-panel,
   .principles-showcase,
@@ -909,7 +961,6 @@ main,
     border-radius: 24px;
   }
 
-  .hero-copy,
   .hero-stage,
   .story-panel,
   .principles-showcase,
